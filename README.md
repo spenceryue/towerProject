@@ -6,7 +6,7 @@ AUTHOR: SPENCER YUE<br><br>
 The objective of this project is to organize 10,000 randomly weighed and
 colored blocks into the tallest tower possible while observing 2 rules:<br>
 
-(1) A block must be lighter than another block it stacks on.
+(1) A block must be lighter than another block it stacks on.<br>
 (2) Block faces can only meet if they are the same color.<br>
 
 One solution to this problem has been recorded in the file
