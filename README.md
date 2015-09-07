@@ -3,13 +3,13 @@
 AUTHOR: SPENCER YUE<br><br>
 
 
-The objective of this project is to organize 10,000 randomly weighed and<br>
-colored blocks into the tallest tower possible while observing 2 simple rules:<br>
+The objective of this project is to organize 10,000 randomly weighed and
+colored blocks into the tallest tower possible while observing 2 rules:<br>
 
-(1) A block must be lighter than another block it stacks on.<br>
+(1) A block must be lighter than another block it stacks on.
 (2) Block faces can only meet if they are the same color.<br>
 
-One solution to this problem has been recorded in the file<br>
+One solution to this problem has been recorded in the file
 "Blocks/sample program output (2015/08/29).txt)".<br>
 
 There are four files in the source folder (Blocks/src) of this project:<br>
@@ -18,11 +18,11 @@ There are four files in the source folder (Blocks/src) of this project:<br>
 (3) Block.java<br>
 (4) TimeReporter.java<br>
 
-File 1 is the first version of the algorithm. It is able to solve the problem<br>
+File 1 is the first version of the algorithm. It is able to solve the problem
 using 10% of the available blocks.<br>
 
-File 2 is the second version. It is able to build a tower using 70% of the<br>
+File 2 is the second version. It is able to build a tower using 70% of the
 available blocks in just 3 seconds.<br>
 
-The key to solving this problem was to recognize that it is an adaptation of the<br>
+The key to solving this problem was to recognize that it is an adaptation of the
 "Longest Increasing Subsequence" problem.
