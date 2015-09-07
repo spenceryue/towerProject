@@ -4,12 +4,10 @@ AUTHOR: SPENCER YUE<br><br>
 
 
 The objective of this program is to organize 10,000 randomly weighed and<br>
-colored blocks into the tallest tower possible while observing 2 simple<br>
-rules:<br>
+colored blocks into the tallest tower possible while observing 2 simple rules:<br>
 
 (1) Only a lighter block can stacked on top of another block.<br>
-(2) Only same-colored sides of two blocks can meet at an interface.<br><br>
-
+(2) Only same-colored sides of two blocks can meet at an interface.<br>
 
 One solution produced by this program has been recorded in the file<br>
 "sample program output (2015/08/29).txt)".<br>
@@ -18,7 +16,7 @@ There are four files in the source folder (src) of this project:<br>
 (1) Blocks.java<br>
 (2) Block.java<br>
 (3) Block_VERSION_1_OBSOLETE.java<br>
-(4) TimeReporter.java<br><br>
+(4) TimeReporter.java<br>
 
 The first version of the main algorithm (file 3) was able to complete a<br>
 tower with the given rules, but used only about 10% of the blocks provided.<br>
