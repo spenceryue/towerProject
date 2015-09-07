@@ -1,30 +1,30 @@
 # towerProject1
 
-AUTHOR: SPENCER YUE
+AUTHOR: SPENCER YUE<br><br><br>
 
 
-The objective of this program is to organize 10,000 randomly weighed and
-colored blocks into the tallest tower possible while observing 2 simple
-rules:
+The objective of this program is to organize 10,000 randomly weighed and<br>
+colored blocks into the tallest tower possible while observing 2 simple<br>
+rules:<br><br>
 
-(1) Only a lighter block may be stacked on top of another block.
-(2) Only same-colored sides of two blocks can meet at an interface.
+(1) Only a lighter block can stacked on top of another block.<br>
+(2) Only same-colored sides of two blocks can meet at an interface.<br><br><br>
 
 
-One solution produced by this program has been recorded in the file
-"sample program output (2015/08/29).txt)".
+One solution produced by this program has been recorded in the file<br>
+"sample program output (2015/08/29).txt)".<br><br>
 
-There are four files in the source folder (src) of this project:
-(1) Blocks.java
-(2) Block.java
-(3) Block_VERSION_1_OBSOLETE.java
-(4) TimeReporter.java
+There are four files in the source folder (src) of this project:<br>
+(1) Blocks.java<br>
+(2) Block.java<br>
+(3) Block_VERSION_1_OBSOLETE.java<br>
+(4) TimeReporter.java<br><br>
 
-The first version of the main algorithm (file 3) was able to complete a
-tower with the given rules, but used only about 10% of the blocks provided.
+The first version of the main algorithm (file 3) was able to complete a<br>
+tower with the given rules, but used only about 10% of the blocks provided.<br><br>
 
-The second version (file 1) is able to build a tower using 70% of the
-blocks provided and at great speed (3 seconds).
+The second version (file 1) is able to build a tower using 70% of the<br>
+blocks provided and at great speed (3 seconds).<br><br>
 
-This project represents a challenging computer science problem that I was
-able to solve using my experience in Java.
+This project represents a challenging computer science problem that I was<br>
+able to solve.
