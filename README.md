@@ -1,4 +1,4 @@
-# towerProject1
+# towerProject
 
 AUTHOR: SPENCER YUE<br><br>
 
