@@ -12,7 +12,7 @@ colored blocks into the tallest tower possible while observing 2 rules:<br>
 One solution to this problem has been recorded in the file
 "Blocks/sample program output (2015/08/29).txt".<br>
 
-There are four files in the source folder (Blocks/src/) of this project:<br>
+There are four files in the source folder (Blocks/src) of this project:<br>
 (1) Builder_v1_obsolete.java<br>
 (2) Builder_v2.java<br>
 (3) Block.java<br>
