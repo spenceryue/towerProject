@@ -21,7 +21,7 @@ There are four files in the source folder (Blocks/src) of this project:<br>
 File (1) is the first version of the algorithm. It is able to solve the problem
 using 10% of the available blocks.<br>
 
-File (2) is the second version. It is able to solve the problem using 70% of the
+File (2) is the second version. It is able to produce a solution using 70% of the
 available blocks in just 3 seconds.<br>
 
 The key to solving this problem was to recognize that it is an adaptation of the
