@@ -10,7 +10,7 @@ colored blocks into the tallest tower possible while observing 2 rules:<br>
 (2) Block faces can only meet if they are the same color.<br>
 
 One solution to this problem has been recorded in the file
-"Blocks/sample program output (2015/08/29).txt)".<br>
+"Blocks/sample program output (2015/08/29).txt".<br>
 
 There are four files in the source folder (Blocks/src) of this project:<br>
 (1) Builder_v1_obsolete.java<br>
