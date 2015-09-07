@@ -9,7 +9,7 @@ colored blocks into the tallest tower possible while observing 2 simple rules:<b
 (1) Only a lighter block can stacked on top of another block.<br>
 (2) Only same-colored sides of two blocks can meet at an interface.<br>
 
-One solution produced by this program has been recorded in the file<br>
+One such tower produced by this program has been recorded in the file<br>
 "sample program output (2015/08/29).txt)".<br>
 
 There are four files in the source folder (src) of this project:<br>
