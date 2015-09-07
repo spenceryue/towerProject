@@ -3,7 +3,7 @@
 AUTHOR: SPENCER YUE<br><br>
 
 
-The objective of this program is to organize 10,000 randomly weighed and<br>
+The objective of this project is to organize 10,000 randomly weighed and<br>
 colored blocks into the tallest tower possible while observing 2 simple rules:<br>
 
 (1) Only a lighter block can stacked on top of another block.<br>
