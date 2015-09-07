@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Block
+public class Builder_v2
 {
 	private final double weight;
 	private final String [] sideColors;
@@ -9,7 +9,7 @@ public class Block
 	private ArrayList<Integer> previousBlocks;
 	private ArrayList<ArrayList<Integer>> possibleSidesUp;
 	
-	public Block(double wt, String [] colors)
+	public Builder_v2(double wt, String [] colors)
 	{
 		weight = wt;
 		sideColors = colors;

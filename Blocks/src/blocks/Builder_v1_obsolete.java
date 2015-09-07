@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Blocks_VERSION_1_OBSOLETE
+public class Builder_v1_obsolete
 {
 	//	Declare and initialize variables
 	private final static int NUM_BLOCKS = 100;

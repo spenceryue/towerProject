@@ -42,9 +42,9 @@ public class Blocks {
 	}
 	
 	// Returns a Blocks array containing the data for each block in file "blocks.txt"
-	public static ArrayList <Block> readList ( File fileName ) throws IOException
+	public static ArrayList <Builder_v2> readList ( File fileName ) throws IOException
 	{
-		ArrayList <Block> pool = new ArrayList <Block> ();
+		ArrayList <Builder_v2> pool = new ArrayList <Builder_v2> ();
 		
 		// Prepare to fill pool array
 		Scanner input = new Scanner ( fileName );
@@ -63,7 +63,7 @@ public class Blocks {
 				colors [side] = line.next();
 			line.close ();
 			
-			pool.add( new Block (weight, colors));
+			pool.add( new Builder_v2 (weight, colors));
 		}
 		input.close ();
 		
@@ -71,12 +71,12 @@ public class Blocks {
 	}
 
 	// Sorts the blocks in pool by weight using Selection Sort algorithm. (greatest to least)
-	public static void weightSort ( ArrayList <Block> pool )
+	public static void weightSort ( ArrayList <Builder_v2> pool )
 	{
 		for ( int index = 0; index < pool.size() - 1; index++ )
 		{
 			int greatest = index;
-			Block temp;
+			Builder_v2 temp;
 			
 			for ( int scan = index + 1; scan < pool.size(); scan++ )
 			{
@@ -94,14 +94,14 @@ public class Blocks {
 	}
 	
 	// Find longest subsequence of color compatible blocks
-	public static ArrayList <ArrayList <Block>> analyze ( ArrayList <Block> pool )
+	public static ArrayList <ArrayList <Builder_v2>> analyze ( ArrayList <Builder_v2> pool )
 	{
-		ArrayList<ArrayList<Block>> length = new ArrayList<ArrayList<Block>> ();
+		ArrayList<ArrayList<Builder_v2>> length = new ArrayList<ArrayList<Builder_v2>> ();
 		for (int i = 0; i < pool.size() ; i++)
 		{
 			for (int l = length.size(); l > 0; l--)
 			{
-				for (Block aPreviousBlock : length.get(l - 1))
+				for (Builder_v2 aPreviousBlock : length.get(l - 1))
 				{
 					int sidesAdded = 0;
 					for (String aPreviousColor : aPreviousBlock.getPossibleSideUpColors ())
@@ -120,7 +120,7 @@ public class Blocks {
 				if (!pool.get(i).getPossibleSidesUp().isEmpty())
 				{
 					if (l == length.size())
-						length.add(new ArrayList<Block> ());
+						length.add(new ArrayList<Builder_v2> ());
 					length.get(l).add(pool.get(i));
 					l = 1;
 				}
@@ -132,7 +132,7 @@ public class Blocks {
 				for (int index = 0; index < 6; index++)
 					pool.get(i).addPossibleSideUp(-1, index);
 				if (length.size() == 0)
-					length.add(new ArrayList<Block> ());
+					length.add(new ArrayList<Builder_v2> ());
 				length.get(0).add(pool.get(i));
 			}
 		}
@@ -147,13 +147,13 @@ public class Blocks {
 		return length;
 	}
 	
-	public static Block [] build ( ArrayList <Block> pool, ArrayList <ArrayList <Block>> length )
+	public static Builder_v2 [] build ( ArrayList <Builder_v2> pool, ArrayList <ArrayList <Builder_v2>> length )
 	{
 		int l = length.size();
 		int i = pool.indexOf(length.get(l - 1).get(0));
 		int m = pool.get(i).getPreviousBlocks().get(0);
 
-		Block [] tower = new Block [l];
+		Builder_v2 [] tower = new Builder_v2 [l];
 
 		pool.get(i).setSideUp(pool.get(i).getPossibleSidesUp().get(0).get(0)); // First ".get(0) matches ".get(0)" in 3rd line (assigning m).
 
@@ -259,14 +259,14 @@ public class Blocks {
                 String fileName = NUM_BLOCKS + " sample blocks (" + theDate.substring(0, theDate.indexOf(":")-3) + ").txt";
 		
 		generate ( NUM_BLOCKS, MAXWEIGHT, Colors, fileName );
-		ArrayList <Block> pool = readList ( new File (fileName) );
+		ArrayList <Builder_v2> pool = readList ( new File (fileName) );
 		weightSort ( pool );
 		
-		ArrayList <ArrayList <Block>> length = analyze ( pool );
-		Block [] tower = build ( pool, length );
+		ArrayList <ArrayList <Builder_v2>> length = analyze ( pool );
+		Builder_v2 [] tower = build ( pool, length );
 		
 		//System.out.println("\n\n");
-		for (Block aBlock : tower)
+		for (Builder_v2 aBlock : tower)
 		{
 			System.out.println(aBlock);
 		}
