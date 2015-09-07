@@ -24,5 +24,5 @@ using 10% of the available blocks.<br>
 File (2) is the second version. It is able to produce a solution using 70% of the
 available blocks in just 3 seconds.<br>
 
-The key to this problem was recognizing it is an adaptation of the
+The key to this problem was recognizing that it is an adaptation of the
 "Longest Increasing Subsequence" problem.
